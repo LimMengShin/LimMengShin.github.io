@@ -29,7 +29,7 @@
 		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
 			{description}
 		</p>
-		<div class="row justify-center md:justify-start p-y-20px p-x-10px gap-4">
+		<div class="row justify-center md:justify-start p-y-20px p-x-10px gap-2">
 			{#each links as link}
 				<a
 					class="decoration-none"
