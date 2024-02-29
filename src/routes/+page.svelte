@@ -29,7 +29,7 @@
 		<p class="text-[var(--tertiary-text)]  text-center md:text-left text-[1.2em] font-extralight">
 			{description}
 		</p>
-		<div class="row justify-center md:justify-start p-y-15px p-x-0px gap-2">
+		<div class="row justify-center md:justify-start p-y-20px p-x-10px gap-4">
 			{#each links as link}
 				<a
 					class="decoration-none"
@@ -37,7 +37,7 @@
 					target="_blank"
 					rel="noreferrer"
 				>
-					<Icon icon={getPlatfromIcon(link.platform)} color={'var(--accent-text)'} size={'20px'} />
+					<Icon icon={getPlatfromIcon(link.platform)} color={'var(--accent-text)'} size={'40px'} />
 				</a>
 			{/each}
 		</div>
