@@ -1,8 +1,10 @@
 <script>
     import CommonPage from '$lib/components/CommonPage.svelte';
+
+    const title = "404";
 </script>
 
-<CommonPage {404}>
+<CommonPage {title}>
     <div class="error-container">
         <h1 class="error-code">404</h1>
         <p class="error-message">Oops! It looks like you're lost.</p>
