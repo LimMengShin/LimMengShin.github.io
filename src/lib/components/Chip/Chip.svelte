@@ -8,6 +8,8 @@
 	export let classes = '';
 	export let href = '';
 
+	const isExternal = href && !href.startsWith('/') && !href.startsWith(window.location.origin);
+
 	$: className = `row-center cursor-pointer py-[5px] px-[15px] m-[2.5px] decoration-none inline-block border-[1px] border-solid border-[var(--border)] rounded-[20px] tracking-wider text-[0.9em] text-[var(--tertiary-text)] duration-[150ms] font-light  ${
 		active
 			? 'bg-[var(--accent)] hover:bg-[var(--accent-hover)]'
@@ -29,6 +31,7 @@
 	on:keydown
 	on:keypress
 	on:keyup
+	{...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
 >
 	<slot />
 </svelte:element>

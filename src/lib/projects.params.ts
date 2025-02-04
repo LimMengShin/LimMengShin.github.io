@@ -4,12 +4,40 @@ import type { Project } from './types';
 
 const MY_PROJECTS: Array<Project> = [
 	{
-		slug: 'class-funds',
-		color: '#5e95e3',
+		slug: 'unbiased-news',
+		color: 'red',
 		description:
-			'- A website for our class to view their remaining funds and track past transactions.\n- Allows class secretary to easily update and manage our class funds when purchasing notes for our class.',
+			'- Developed a Flask-based website integrating Gemini AI to generate balanced, unbiased news articles.\n- Implemented features for political leaning, bias, and tone analysis.\n- Enabled article conversion into unbiased, opposite political lean, opposite tone, and simplified versions.\n- Integrated search functionality and dark mode for improved user experience.\n- Built with HTML, CSS, JavaScript, Python with Flask, and SQL.',
 		shortDescription:
-			'A website for our class to view their remaining funds and track past transactions',
+			'A Flask website with Gemini AI that aggregates diverse news sources to generate balanced, unbiased articles.',
+		links: [{ to: 'https://news.mengshin.me', label: 'Website' }, { to: 'https://github.com/LimMengShin/news', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'Unbiased News',
+		period: { from: new Date(2024, 11, 1), to: new Date(2025, 0, 31) },
+		skills: getSkills('python', 'flask', 'sql', 'html', 'css', 'js'),
+		type: 'Web Application / Artificial Intelligence',
+	},
+	{
+		slug: 'chess-website',
+		color: 'orange',
+		description:
+			'- Developed a web-based chess platform to play against Stockfish in Standard Chess and Chess960 modes.\n- Implemented adjustable engine strength to match player skill levels.\n- Integrated move history tracking, unlimited undo/redo functionality, and real-time position analysis.\n- Provided top move suggestions and evaluation displays for strategic insights.\n- Built with HTML, CSS, JavaScript, Python with Flask, `python-chess`, `stockfish`, `chessboard.js`, `chess.js`.',
+		shortDescription:
+			'Play standard chess or Chess960 against Stockfish with adjustable ELO, move history, undo/redo, best move suggestions, and real-time analysis.',
+		links: [{ to: 'https://chess.mengshin.me', label: 'Website' }, { to: 'https://github.com/LimMengShin/chess', label: 'GitHub' }],
+		logo: Assets.Unknown,
+		name: 'Chess(960) with Stockfish',
+		period: { from: new Date(2025, 0, 1), to: new Date(2025, 1, 28) },
+		skills: getSkills('python', 'flask', 'html', 'css', 'js'),
+		type: 'Web Application / Artificial Intelligence',
+	},
+	{
+		slug: 'class-funds',
+		color: 'yellow',
+		description:
+			'- Co-created a website for classmates to manage and view class funds and transactions, improving transparency and efficiency.\n- Implemented role-based access control to ensure secure updates by authorised users only.\n- Streamlined fund management processes, enabling the class secretary to efficiently update and manage class funds for purchasing notes.',
+		shortDescription:
+			'A website for our class to manage and view class funds and transactions',
 		links: [{ to: 'https://github.com/LimMengShin/235c33', label: 'GitHub' }],
 		logo: Assets.Unknown,
 		name: 'Class Funds Management System',
@@ -19,25 +47,25 @@ const MY_PROJECTS: Array<Project> = [
 	},
 	{
 		slug: 'econs-chatbot',
-		color: '#ff3e00',
+		color: 'green',
 		description:
-			'A chatbot that acts as a personal assistant to students taking the A Levels Economics subject.',
+			'- Designed and implemented a chatbot to assist students in mastering A-Level Economics concepts.\n- Incorporated Gemini AI to process user queries and provide accurate, contextual responses with improved efficiency and scalability.\n- Gained over 200 active users during testing, receiving positive feedback for its intuitive interface and depth of content.',
 		shortDescription:
-			'A chatbot that acts as a personal assistant to students taking the A Levels Economics subject.',
+			'A chatbot that acts as a personal assistant to students taking the A-Level Economics subject',
 		links: [],
 		logo: Assets.Unknown,
 		name: 'Economics Chatbot',
-		period: { from: new Date(2024, 1, 1) },
-		skills: getSkills('python', 'flask', 'html', 'css', 'js', 'flutter', 'dart'),
-		type: 'Web Application / Mobile Application',
+		period: { from: new Date(2024, 1, 1), to: new Date(2024, 5, 30) },
+		skills: getSkills('python', 'flask', 'html', 'css', 'js'),
+		type: 'Web Application',
 	},
 	{
 		slug: 'damegue',
-		color: '#ff3e00',
+		color: 'blue',
 		description:
-			'Damegue is a website that can determine the chances of a user having the dengue virus, and show the predicted number of dengue cases in an area using artificial intelligence and machine learning. It is built using Python and Flask.',
+			'- Built a Python and Flask-based website that predicts dengue risk and cases using AI and machine learning techniques.\n- Integrated real-time data from public health sources like NEA (National Environment Agency) to provide accurate and up-to-date predictions.',
 		shortDescription:
-			'Damegue is a website that can determine the chances of a user having the dengue virus, and show the predicted number of dengue cases in an area using artificial intelligence and machine learning.',
+			'Damegue uses AI and ML to assess a user\'s dengue risk and predict local dengue case trends.',
 		links: [],
 		logo: Assets.Unknown,
 		name: 'Damegue',
@@ -46,46 +74,32 @@ const MY_PROJECTS: Array<Project> = [
 		type: 'Web Application',
 	},
 	{
-		slug: 'recipely',
-		color: '#ff3e00',
+		slug: 'task-habit-app',
+		color: 'indigo',
 		description:
-			'As part of the Swift Accelerator Programme, our team created Recipely, an all-in-one recipe app developed for iOS devices, built using Swift.',
+			'- Built a Flutter-based app to help users track habits and tasks, featuring a reward system for completed actions.\n- Developed a unique analytics feature that visualises user progress using heat maps. This feature helped users identify trends in their habits and tasks over time.',
 		shortDescription:
-			'Recipely is an all-in-one receipe app built using Swift.',
-		links: [{ to: 'https://apps.apple.com/us/app/recipely/id1545119133', label: 'App Store' }],
+			'A habit tracker and task app built with Flutter and Dart.',
+		links: [],
+		logo: Assets.Unknown,
+		name: 'Habit tracker + Task App',
+		period: { from: new Date(2024, 1, 1), to: new Date(2024, 3, 30) },
+		skills: getSkills('flutter', 'dart'),
+		type: 'Mobile Application',
+	},
+	{
+		slug: 'recipely',
+		color: 'violet',
+		description:
+			'- Developed an iOS recipe app using Swift, providing a seamless solution for finding new recipes.\n- Designed a unique search feature that allows users to filter recipes by food intolerances and dietary preferences, saving time and reducing food waste.\n- Implemented features such as a healthiness score for recipes, estimated cooking time, an in-built timer, and integration with HealthKit, enhancing the ease and efficiency of following recipes.\n- Published app on the Apple App Store, receiving multiple glowing reviews for its usefulness and ease of use.',
+		shortDescription:
+			'Recipely is an all-in-one receipe app built with Swift.',
+		links: [],
 		logo: Assets.Recipely,
 		name: 'Recipely',
 		period: { from: new Date(2020, 9, 1), to: new Date(2020, 11, 31) },
 		skills: getSkills('swift'),
 		type: 'Mobile Application',
-	},
-	{
-		slug: 'task-habit-app',
-		color: '#ff3e00',
-		description:
-			'A habit tracker and task app built using Flutter and Dart. It includes a feature where users can redeem rewards upon completion of tasks or habits.',
-		shortDescription:
-			'A habit tracker and task app built using Flutter and Dart.',
-		links: [],
-		logo: Assets.Unknown,
-		name: 'Habit tracker + Task App',
-		period: { from: new Date(2024, 1, 1) },
-		skills: getSkills('flutter', 'dart'),
-		type: 'Mobile Application',
-	},
-	{
-		slug: 'ai-chess-engine',
-		color: '#ff3e00',
-		description:
-			'A chess engine that uses the minimax algorithm to determine the best move to play at any given position. It is built using Python.',
-		shortDescription:
-			'A chess engine that uses the minimax algorithm to determine the best move to play at any given position.',
-		links: [],
-		logo: Assets.Unknown,
-		name: 'AI Chess Engine',
-		period: { from: new Date(2023, 10, 1), to: new Date(2023, 11, 31) },
-	skills: getSkills('python'),
-		type: 'Artificial Intelligence',
 	},
 ];
 

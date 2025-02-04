@@ -81,6 +81,7 @@ const Assets = {
 	Swift: a('swift.svg'),
 	Scipy: a('scipy.svg'),
 	Recipely: a('recipely.png'),
+	Micron: a('micron.png'),
 };
 
 export default Assets;

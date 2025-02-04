@@ -49,26 +49,21 @@ export function getTimeDiff(date1: Date, date2 = new Date(Date.now() + 1000 * 60
 
 	const duration = dayjs.duration(d2.diff(d1));
 
-	let n = 0;
-	let u = 'day';
+	let m = duration.as('months');
+	m = Math.round(m);
 
-	if (duration.as('days') <= 7) {
-		u = 'day';
-		n = duration.as('days');
-	} else if (duration.as('months') <= 1) {
-		u = 'week';
-		n = duration.as('weeks');
-	} else if (duration.as('years') <= 1) {
-		u = 'month';
-		n = duration.as('months');
+	if (m < 12) {
+		m = m ? m : 1;
+		return `${m} month${m > 1 ? 's' : ''}`;
 	} else {
-		u = 'year';
-		n = duration.as('years');
+		let y = duration.as('years');
+		y = Math.trunc(y);
+		m = m - y * 12;
+		if (m == 0) {
+			return `${y} year${y > 1 ? 's' : ''}`;
+		}
+		return `${y} year${y > 1 ? 's' : ''} ${m} month${m > 1 ? 's' : ''}`;
 	}
-
-	n = Math.trunc(n);
-
-	return `${Math.trunc(n)} ${u}${n > 1 ? 's' : ''}`;
 }
 
 type ItemOrSkill = Item | Skill;
