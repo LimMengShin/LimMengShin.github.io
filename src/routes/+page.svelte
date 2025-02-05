@@ -20,6 +20,7 @@
 
 <svelte:head>
 	<title>{TITLE_SUFFIX}</title>
+	<meta name="description" content="A driven tech enthusiast with a passion for turning ideas into reality. I love building projects to explore new technologies and hone my coding skills.">
 </svelte:head>
 <div
 	class="col self-center flex-1 md:flex-row md:slef-stretch justify-center lg:justify-between items-center p-y-0px p-x-10px"
