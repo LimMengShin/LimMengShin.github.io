@@ -16,6 +16,7 @@ const MY_PROJECTS: Array<Project> = [
 		period: { from: new Date(2024, 11, 1), to: new Date(2025, 0, 31) },
 		skills: getSkills('python', 'flask', 'sql', 'html', 'css', 'js'),
 		type: 'Web Application / Artificial Intelligence',
+		screenshots: [{ src: '../images/unbiased-news-light.png', label: 'Home Page (Light Mode)' }, { src: '../images/unbiased-news-dark.png', label: 'Home Page (Dark Mode)' }, { src: '../images/unbiased-news-article-light.png', label: 'Article Page (Light Mode)' }, { src: '../images/unbiased-news-article-dark.png', label: 'Article Page (Dark Mode)' }],
 	},
 	{
 		slug: 'chess-website',
@@ -30,6 +31,7 @@ const MY_PROJECTS: Array<Project> = [
 		period: { from: new Date(2025, 0, 1), to: new Date(2025, 1, 28) },
 		skills: getSkills('python', 'flask', 'html', 'css', 'js'),
 		type: 'Web Application / Artificial Intelligence',
+		screenshots: [{ src: '../images/chess-website.png', label: 'Chess Website' }],
 	},
 	{
 		slug: 'class-funds',

@@ -42,7 +42,7 @@ export const HOME: HomePageParams = {
 	links: [
 		{
 			platform: Platform.Linkedin,
-			link: 'https://www.linkedin.com/in/limmengshin/'
+			link: 'https://www.linkedin.com/in/limmengshin'
 		},
 		{
 			platform: Platform.GitHub,
