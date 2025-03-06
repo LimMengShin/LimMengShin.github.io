@@ -10,7 +10,7 @@ const MY_PROJECTS: Array<Project> = [
 			'- Developed a Flask-based website integrating Gemini AI to generate balanced, unbiased news articles.\n- Implemented features for political leaning, bias, and tone analysis.\n- Enabled article conversion into unbiased, opposite political lean, opposite tone, and simplified versions.\n- Integrated search functionality and dark mode for improved user experience.\n- Built with HTML, CSS, JavaScript, Python with Flask, and SQL.',
 		shortDescription:
 			'A Flask website with Gemini AI that aggregates diverse news sources to generate balanced, unbiased articles.',
-		links: [{ to: 'https://news.mengshin.me', label: 'Website' }, { to: 'https://github.com/LimMengShin/news', label: 'GitHub' }],
+		links: [{ to: 'https://news.mengshin.dev', label: 'Website' }, { to: 'https://github.com/LimMengShin/news', label: 'GitHub' }],
 		logo: Assets.Unknown,
 		name: 'Unbiased News',
 		period: { from: new Date(2024, 11, 1), to: new Date(2025, 0, 31) },
@@ -25,7 +25,7 @@ const MY_PROJECTS: Array<Project> = [
 			'- Developed a web-based chess platform to play against Stockfish in Standard Chess and Chess960 modes.\n- Implemented adjustable engine strength to match player skill levels.\n- Integrated move history tracking, unlimited undo/redo functionality, and real-time position analysis.\n- Provided top move suggestions and evaluation displays for strategic insights.\n- Built with HTML, CSS, JavaScript, Python with Flask, `python-chess`, `stockfish`, `chessboard.js`, `chess.js`.',
 		shortDescription:
 			'Play standard chess or Chess960 against Stockfish with adjustable ELO, move history, undo/redo, best move suggestions, and real-time analysis.',
-		links: [{ to: 'https://chess.mengshin.me', label: 'Website' }, { to: 'https://github.com/LimMengShin/chess', label: 'GitHub' }],
+		links: [{ to: 'https://chess.mengshin.dev', label: 'Website' }, { to: 'https://github.com/LimMengShin/chess', label: 'GitHub' }],
 		logo: Assets.Unknown,
 		name: 'Chess(960) with Stockfish',
 		period: { from: new Date(2025, 0, 1), to: new Date(2025, 1, 28) },
